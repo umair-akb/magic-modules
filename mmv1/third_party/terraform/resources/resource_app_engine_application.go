@@ -160,25 +160,6 @@ func resourceAppEngineApplication() *schema.Resource {
 	}
 }
 
-func appEngineApplicationURLDispatchRuleResource() *schema.Resource {
-	return &schema.Resource{
-		Schema: map[string]*schema.Schema{
-			"domain": {
-				Type:     schema.TypeString,
-				Computed: true,
-			},
-			"path": {
-				Type:     schema.TypeString,
-				Computed: true,
-			},
-			"service": {
-				Type:     schema.TypeString,
-				Computed: true,
-			},
-		},
-	}
-}
-
 func appEngineApplicationFeatureSettingsResource() *schema.Resource {
 	return &schema.Resource{
 		Schema: map[string]*schema.Schema{
